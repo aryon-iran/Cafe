@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUXE CAFÉ | منوی اختصاصی</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200;300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= LOADER ================= -->
+  <div id="loader">
+    <div class="loader-logo">LC</div>
+    <div class="loader-bar"></div>
+    <div class="loader-text">Preparing your experience</div>
+  </div>
+
+  <!-- لایه‌های پس‌زمینه -->
+  <div class="bg-layer"></div>
+  <div class="bg-overlay"></div>
+  <div class="bg-grain"></div>
+
+  <!-- ================= TOP BAR ================= -->
+  <div class="top-bar" id="topBar">
+    <div class="top-brand">
+      <span class="top-brand-dot"></span>
+      <span>LUXE CAFÉ</span>
+    </div>
+    <div class="top-actions">
+      <button class="lang-toggle" id="langToggle">EN</button>
+      <button class="icon-btn" id="cartOpen" aria-label="سبد خرید">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="page-wrapper">
+
+    <!-- ================= HEADER ================= -->
+    <header>
+      <div class="brand-mark">
+        <div class="brand-icon">LC</div>
+      </div>
+      <h1 class="main-title">LUXE <span class="accent">Café</span></h1>
+      <p class="tagline"><span data-i18n="tagline">Signature Menu</span></p>
+    </header>
+
+    <!-- ================= MENU GRID ================= -->
+    <main class="menu-grid">
+
+      <!-- چای -->
+      <article class="menu-card" data-id="tea">
+        <div class="card-visual">
+          <span class="card-number">01</span>
+          <img src="tea.png" alt="چای">
+        </div>
+        <div class="card-content">
+          <div class="card-category" data-i18n="tea_cat">Hot Beverage</div>
+          <h2 class="card-title" data-i18n="tea_title">Premium Tea</h2>
+          <div class="card-title-fa" data-i18n="tea_title_fa">چای ممتاز</div>
+          <p class="card-desc" data-i18n="tea_desc">
+            برگزیده‌ای از چای‌های اصیل با عطری ماندگار، دم‌آوری شده در دمای دقیق برای تجربه‌ای ناب.
+          </p>
+          <div class="card-footer">
+            <div class="price-box">
+              <span class="price-label">Price</span>
+              <span class="price-value" data-i18n="tea_price">۴۵<small>هزار تومان</small></span>
+            </div>
+            <button class="order-btn" aria-label="سفارش">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- قهوه -->
+      <article class="menu-card" data-id="coffee">
+        <div class="card-visual">
+          <span class="card-number">02</span>
+          <img src="Cafe.png" alt="قهوه">
+        </div>
+        <div class="card-content">
+          <div class="card-category" data-i18n="coffee_cat">Espresso Bar</div>
+          <h2 class="card-title" data-i18n="coffee_title">Artisan Coffee</h2>
+          <div class="card-title-fa" data-i18n="coffee_title_fa">قهوه دست‌ساز</div>
+          <p class="card-desc" data-i18n="coffee_desc">
+            دانه‌های تازه برشته‌شده با پروفایل طعمی متعادل، استخراج شده برای کرمایی مخملی و عمیق.
+          </p>
+          <div class="card-footer">
+            <div class="price-box">
+              <span class="price-label">Price</span>
+              <span class="price-value" data-i18n="coffee_price">۷۵<small>هزار تومان</small></span>
+            </div>
+            <button class="order-btn" aria-label="سفارش">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- چیز کیک -->
+      <article class="menu-card" data-id="cake">
+        <div class="card-visual">
+          <span class="card-number">03</span>
+          <img src="Cake.png" alt="چیز کیک">
+        </div>
+        <div class="card-content">
+          <div class="card-category" data-i18n="cake_cat">Patisserie</div>
+          <h2 class="card-title" data-i18n="cake_title">Cheesecake</h2>
+          <div class="card-title-fa" data-i18n="cake_title_fa">چیز کیک خانگی</div>
+          <p class="card-desc" data-i18n="cake_desc">
+            بافتی ابریشمی از پنیر خامه‌ای تازه، بر پایه بیسکویتی کرِه‌ای با لایه‌ای از سس اختصاصی.
+          </p>
+          <div class="card-footer">
+            <div class="price-box">
+              <span class="price-label">Price</span>
+              <span class="price-value" data-i18n="cake_price">۹۵<small>هزار تومان</small></span>
+            </div>
+            <button class="order-btn" aria-label="سفارش">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <p class="footer-text">Crafted with passion, served with elegance.</p>
+      <div class="footer-ornament">SINCE 2025</div>
+    </footer>
+
+  </div>
+
+  <!-- ================= MODAL ================= -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="بستن">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+      <div class="modal-visual">
+        <img id="modalImg" src="" alt="">
+      </div>
+      <div class="modal-body">
+        <div class="modal-category" id="modalCategory"></div>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <div class="modal-title-fa" id="modalTitleFa"></div>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-info">
+          <div class="modal-info-item">
+            <div class="modal-info-label">Time</div>
+            <div class="modal-info-value" id="modalTime">5 min</div>
+          </div>
+          <div class="modal-info-item">
+            <div class="modal-info-label">Rating</div>
+            <div class="modal-info-value">★★★★★</div>
+          </div>
+          <div class="modal-info-item">
+            <div class="modal-info-label">Calories</div>
+            <div class="modal-info-value" id="modalCal">~120</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="modal-price" id="modalPrice"></div>
+          <button class="modal-add-btn" id="modalAdd">افزودن به سفارش</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= CART SIDEBAR ================= -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <div class="cart-header-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        <span id="cartTitle">سفارش شما</span>
+      </div>
+      <button class="cart-close" id="cartClose" aria-label="بستن">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span class="cart-total-label" id="cartTotalLabel">جمع کل</span>
+        <span class="cart-total-value" id="cartTotal">۰<small>تومان</small></span>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn" disabled>نهایی کردن سفارش</button>
+    </div>
+  </aside>
+
+  <!-- ================= AUDIO FAB ================= -->
+  <button class="audio-fab" id="audioFab" aria-label="موسیقی">
+    <svg id="audioIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 18V5l12-2v13"/>
+      <circle cx="6" cy="18" r="3"/>
+      <circle cx="18" cy="16" r="3"/>
+    </svg>
+  </button>
+
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- ================= TOAST ================= -->
+  <div class="toast" id="toast">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 6L9 17l-5-5"/>
+    </svg>
+    <span id="toastMsg"></span>
+  </div>
+
+  <script src="menu.js"></script>
+</body>
+</html>
